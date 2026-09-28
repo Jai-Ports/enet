@@ -1,0 +1,74 @@
+{
+  "schema_version": 3,
+  "name": "enet",
+  "upstream": {
+    "url": "https://github.com/lsalzman/enet.git",
+    "commit": "5a9c537fd464b3c6d3c55e1d3bd47588faf71b42"
+  },
+  "generator": {
+    "repository": "https://github.com/Jai-Ports/generator.git",
+    "commit": "30323747a0bfac4edb197bc1eda78282301b47a4"
+  },
+  "language": "c",
+  "standard": "gnu11",
+  "supported_target": "linux-x64",
+  "include_directories": [
+    "include"
+  ],
+  "compiler_flags": [
+  ],
+  "cmake": {"enabled": false, "source_directory": "", "cache_variables": [
+    ], "source_cache_variables": [], "build_targets": [
+    ]},
+  "make": {"enabled": false, "configure_script": "", "configure_arguments": [
+    ], "variables": [
+    ], "generated_targets": [
+    ]},
+  "prepared_files": [
+  ],
+  "dependencies": [
+  ],
+  "submodules": [
+  ],
+  "modules": [
+    {
+      "path": "",
+      "transpiler_prefix": "enet",
+      "sources": [
+        "callbacks.c",
+        "compress.c",
+        "host.c",
+        "list.c",
+        "packet.c",
+        "peer.c",
+        "protocol.c",
+        "unix.c"
+      ],
+      "generator_sources": [],
+      "source_groups": [],
+      "cmake_targets": [
+      ],
+      "make_targets": [
+      ],
+      "defines": [
+        "_GNU_SOURCE=1",
+        "HAS_FCNTL=1",
+        "HAS_POLL=1",
+        "HAS_GETADDRINFO=1",
+        "HAS_GETNAMEINFO=1",
+        "HAS_GETHOSTBYNAME_R=1",
+        "HAS_GETHOSTBYADDR_R=1",
+        "HAS_INET_PTON=1",
+        "HAS_INET_NTOP=1",
+        "HAS_OFFSETOF=1",
+        "HAS_MSGHDR_FLAGS=1",
+        "HAS_SOCKLEN_T=1"
+      ],
+      "compiler_flags": [
+      ],
+      "system_libraries": [
+      ],
+      "entry": "cpp_transpiler_program.jai"
+    }
+  ]
+}
